@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Учет расходов</title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <span class="fullName"></span>
+            <button type="button" class="logout" onclick=logout()>Выйти</button>
+            <h2>Учет моих расходов</h2>
+            <div class="inputs">
+                <div class="single-input">
+                    <label for="inputText">куда было потрачено:</label>
+                    <input type="text" id="inputText" placeholder="куда было потрачено" required>
+                </div>
+                <div class="single-input">
+                    <label for="inputCost">сколько было потрачено:</label>
+                    <input type="number" id="inputCost" placeholder="сколько было потрачено" min='1' required>
+                </div>
+                <button type="button" id="add-btn">добавить</button>
+            </div>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+
+</body>
+</html>
